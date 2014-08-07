@@ -1,4 +1,4 @@
 @extends('_master')
 @section('content')
-{{ $users or ''}}
+{{ $users or '' }} 
 @stop

@@ -1,4 +1,4 @@
 @extends('_master')
 @section('content')
-{{ $lorem or ''}}
+{{ $lorem or '' }} 
 @stop
