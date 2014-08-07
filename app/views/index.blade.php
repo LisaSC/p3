@@ -4,7 +4,7 @@
 		Number of paragraphs:<br>
 		{{ Form::text('num_paragraphs', '5', array('size'=>1, 'pattern'=>'[1-9]{1}')) }} 
 		(1-9)<br>
-		{{ Form::submit() }} 
+		{{ Form::submit('Generate text') }} 
 	{{ Form::close() }} 
 	<br><br>
 	
@@ -14,7 +14,7 @@
 		(1-99)<br>
 		{{ Form::checkbox('add_birthday', true) }}
 		Include Birthday<br>
-		{{ Form::submit() }} 
+		{{ Form::submit('Generate users') }} 
 	{{ Form::close() }} 
 
 @stop

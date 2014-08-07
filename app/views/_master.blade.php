@@ -4,13 +4,12 @@
 
 	<title>@yield('title','Data Generator')</title>
 
-	@yield('head')
-
 </head>
 
 <body>
 
 	<h1>@yield('page_header', 'Data Generator')</h1>
+	<h2>@yield('sub_header')</h2>
 
 	@yield('content')
 
