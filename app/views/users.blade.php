@@ -1,6 +1,7 @@
 @extends('_master')
 @section('sub_header')
-Random users:
+Users:
+@stop
 @section('content')
 {{ $users or '' }} 
 @stop
