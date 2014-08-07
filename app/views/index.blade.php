@@ -7,7 +7,7 @@
 	<br><br>
 	
 	{{ Form::open(array('url'=>'users', 'method'=>'POST')) }} 
-		{{ Form::text('num_users', '5', array('pattern'=>[0,9]{1,2})) }} 
+		{{ Form::text('num_users', '5', array('pattern'=>'[0,9]{1,2}')) }} 
 		<br>
 		
 		{{ Form::submit() }} 
