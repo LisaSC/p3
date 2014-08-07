@@ -1,6 +1,6 @@
 @extends('_master')
 @section('sub_header')
-Text
+Lorem Ipsum Text:
 @stop
 @section('content')
 {{ $lorem or '' }} 

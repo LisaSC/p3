@@ -4,7 +4,7 @@
 <http://p3.ink3.co.uk>
 
 ##Descripion
-P3 as described in requirements.
+P3 for DWA as described in requirements.
 
 ##Details
 Outside code:
