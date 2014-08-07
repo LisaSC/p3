@@ -20,6 +20,10 @@ Route::get('/lorem', function(){
 });
 
 Route::post('/lorem', function(){
+	$generator = new Badcow\LoremIpsum\Generator();
+	$paragraphs = $generator->getParagraphs('num_paragraphs');
+	$lorem = implode('<p>', $paragraphs);
+	return View::make('lorem')->with('lorem', $lorem);
 });
 
 Route::get('/users', function(){
@@ -27,4 +31,16 @@ Route::get('/users', function(){
 });
 
 Route::post('/users', function(){
+	// use the factory to create a Faker\Generator instance
+	$faker = Faker\Factory::create();
+	$users = '';
+	// generate data by accessing properties
+	for($i=0; $i<Input::get('num_users'); $i++){
+		$users.='<b>'.$faker->name.'</b><br>';
+		if(Input::get('add_birthday')){
+			$users.=$faker->date($format = 'Y-m-d', $max = 'now').'<br>';
+		}
+		$users.='<br>';
+	}
+	return View::make('users')->with('users', $users);
 });

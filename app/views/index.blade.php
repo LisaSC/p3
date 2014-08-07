@@ -6,6 +6,7 @@
 	</form>
 	<br>
 	<br>
+	
 	<form action='/users' method='POST'>
 		Number of users:<input type='number' name='num_users' value='5' pattern=[0-9]{1,2}><br>
 		<input type='checkbox' name='add_birthday'>Include Birthday<br>
