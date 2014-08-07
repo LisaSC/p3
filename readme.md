@@ -8,5 +8,5 @@ P3 as described in requirements.
 
 ##Details
 Outside code:
-Laravel, badcow/lorem-ipsum, fzaninotto/faker
+Laravel, badcow/lorem-ipsum, fzaninotto/faker  
 No login required.
