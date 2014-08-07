@@ -10,7 +10,7 @@
 
 <body>
 
-	<h1>@yield('page_header', 'Data Generator')</h1
+	<h1>@yield('page_header', 'Data Generator')</h1>
 
 	@yield('content')
 

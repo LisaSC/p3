@@ -1,16 +1,16 @@
 @extends('_master')
 @section('content')
-	<form action='/lorem' method='POST'>
-		Number of paragraphs:<input type='number' name='num_paragraphs' value='5' pattern=[0-9]{1,2}><br>
-		<input type='submit' value='Generate text'>
-	</form>
-	<br>
-	<br>
+	{{Form::open(array('url'=>'lorem', 'method'=>'POST'))}}
+		{{Form::text('num_paragraphs', '5', array('pattern'=>'[0,9]{1,2}))}}
+		{{Form::submit()}}
+	{{Form::close()}}
+	<br><br>
 	
-	<form action='/users' method='POST'>
-		Number of users:<input type='number' name='num_users' value='5' pattern=[0-9]{1,2}><br>
-		<input type='checkbox' name='add_birthday'>Include Birthday<br>
-		<input type='submit' value='Generate users'>
-	</form>
+	{{Form::open(array('url'=>'users', 'method'=>'POST'))}}
+		{{Form::text('num_users', '5', array('pattern'=>'[0,9]{1,2}))}}
+		<br>
+		{{Form::checkbox('add_birthday', true)}}
+		{{Form::submit()}}
+	{{Form::close()}}
 
 @stop

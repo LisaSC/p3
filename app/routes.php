@@ -32,7 +32,7 @@ Route::get('/users', function(){
 
 Route::post('/users', function(){
 	// use the factory to create a Faker\Generator instance
-	$faker = fzaninotto\Faker\Factory::create();
+	$faker = Faker\Factory::create();
 	$users = '';
 	// generate data by accessing properties
 	for($i=0; $i<Input::get('num_users'); $i++){
